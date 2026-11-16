@@ -1,9 +1,9 @@
--- Step 1: take the raw table
+-- Take the raw table
 with raw as (
     select * from {{ source('raw', 'weather_raw') }}
 ),
 
--- Step 2: turn the JSON lists into one row per city per day
+-- Turn the JSON lists into one row per city per day
 flattened as (
     select
         raw.city,
@@ -19,7 +19,7 @@ flattened as (
         lateral flatten(input => raw.payload:daily:time) as f
 )
 
--- Step 3: if a city and day appear twice, keep only the newest one
+-- If a city and day appear twice, keep only the newest one
 select *
 from flattened
 qualify row_number() over (
