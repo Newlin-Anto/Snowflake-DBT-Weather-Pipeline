@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_weather
+    columns:
+      - name: city
+        data_tests:
+          - not_null
+      - name: weather_date
+        data_tests:
+          - not_null
+
+  - name: dim_city
+    columns:
+      - name: city
+        data_tests:
+          - not_null
+          - unique
