@@ -311,8 +311,5 @@ Aspiring Data Engineer
 
 Skills: Python | SQL | PySpark | Snowflake | dbt | Apache Spark | AWS | Linux
 
-<<<<<<< HEAD
 🔗 LinkedIn: www.linkedin.com/in/new-lin
-=======
-🔗 LinkedIn: www.linkedin.com/in/new-lin
->>>>>>> a1272bd2bf0ad75aa6ebf326df2c8e1910ea9c49
+
