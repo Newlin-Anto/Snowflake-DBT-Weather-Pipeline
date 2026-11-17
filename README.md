@@ -217,7 +217,7 @@ If a test fails, `dbt build` reports the error so bad data is caught before it r
 
 Sample output of `FCT_DAILY_WEATHER` in Snowflake: 80 rows, 10 cities × 8 days.
 
-![FCT_DAILY_WEATHER output](images/fct_daily_weather.png)
+<img width="1633" height="837" alt="Screenshot 2026-11-16 184040" src="https://github.com/user-attachments/assets/2cdd8017-3c1a-489d-8600-7ed14cc75248" />
 
 ## Complete Data Flow
 
